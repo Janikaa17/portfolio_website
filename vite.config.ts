@@ -5,6 +5,9 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   base: '/portfolio_website/',
+  build: {
+    outDir: 'dist',  
+  },
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
