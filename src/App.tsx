@@ -110,7 +110,7 @@ function App() {
             <div className="relative flex justify-center">
               <div className="w-64 h-64 sm:w-80 sm:h-80 overflow-hidden rounded-full border-4 border-[#E576CD]">
                 <img
-                  src="/public/profile.jpg"
+                  src="https://res.cloudinary.com/metapass/image/upload/v1738595938/profile_miajyu.jpg"
                   alt="Professional headshot"
                   className="w-full h-full object-cover"
                   loading="eager"
