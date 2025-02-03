@@ -15,7 +15,7 @@ function App() {
     try {
       setIsDownloading(true);
       setDownloadError(null);
-      
+
       const response = await fetch('/resume.pdf');
       if (!response.ok) {
         throw new Error('Failed to download resume');
@@ -39,7 +39,7 @@ function App() {
   }, []);
 
   const skills = [
-    'Python', 'C', 'Java', 'HTML', 'CSS', 'Javascript', 
+    'Python', 'C', 'Java', 'HTML', 'CSS', 'Javascript',
     'Wireshark', 'BurpSuite', 'React', 'nmap', 'Metasploit', 'Figma'
   ];
 
@@ -110,7 +110,7 @@ function App() {
             <div className="relative flex justify-center">
               <div className="w-64 h-64 sm:w-80 sm:h-80 overflow-hidden rounded-full border-4 border-[#E576CD]">
                 <img
-                  src="/profile.jpg"
+                  src="/public/profile.jpg"
                   alt="Professional headshot"
                   className="w-full h-full object-cover"
                   loading="eager"
@@ -129,7 +129,7 @@ function App() {
             <div className="bg-[#F1EBD4]/10 rounded-2xl p-6 hover:transform hover:scale-105 transition-transform">
               <h3 className="text-xl font-display font-bold mb-4">Furhaven</h3>
               <p className="mb-4">
-                Furhaven is a platform that helps users locate nearby animal shelters, 
+                Furhaven is a platform that helps users locate nearby animal shelters,
                 donate, volunteer, and support pet welfare.
               </p>
               <a
@@ -208,14 +208,14 @@ function App() {
 
       {/* Modal */}
       {isModalOpen && (
-        <div 
+        <div
           className="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
           onClick={() => setIsModalOpen(false)}
           role="dialog"
           aria-modal="true"
           aria-labelledby="modal-title"
         >
-          <div 
+          <div
             className="bg-[#0D0D0D] p-8 rounded-2xl max-w-md mx-4"
             onClick={e => e.stopPropagation()}
           >
