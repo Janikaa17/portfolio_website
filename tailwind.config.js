@@ -5,7 +5,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['DM Sans', 'sans-serif'],
-        display: ['Syne', 'sans-serif'],
+        display: ['Satoshi', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
       },
     },
   },

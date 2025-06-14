@@ -1,5 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import { Github, Linkedin, Mail, X, Check, Download, ExternalLink } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import CustomCursor from './components/CustomCursor';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -45,6 +47,7 @@ function App() {
 
   return (
     <div className="bg-[#0D0D0D] text-[#F1EBD4] min-h-screen">
+      <CustomCursor />
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 bg-[#0D0D0D]/90 backdrop-blur-sm z-50">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -129,8 +132,7 @@ function App() {
             <div className="bg-[#F1EBD4]/10 rounded-2xl p-6 hover:transform hover:scale-105 transition-transform">
               <h3 className="text-xl font-display font-bold mb-4">Furhaven</h3>
               <p className="mb-4">
-                Furhaven is a platform that helps users locate nearby animal shelters,
-                donate, volunteer, and support pet welfare.
+                Furhaven is a user-friendly platform that helps people discover and connect with local animal shelters. Whether you're looking to adopt, volunteer, or donate, Furhaven makes supporting animal welfare easy and accessible, empowering communities to make a positive impact on pets in need.
               </p>
               <a
                 href="https://github.com/Janikaa17/FurHaven"
@@ -141,6 +143,23 @@ function App() {
               >
                 <Github className="w-5 h-5 mr-2" />
                 View on GitHub
+              </a>
+            </div>
+            {/* EncryptX Project Box */}
+            <div className="bg-[#F1EBD4]/10 rounded-2xl p-6 hover:transform hover:scale-105 transition-transform">
+              <h3 className="text-xl font-display font-bold mb-4">EncryptX</h3>
+              <p className="mb-4">
+                EncryptX is a powerful web application designed to make encryption and decryption effortless for everyone. Featuring a suite of contrasting cryptographic algorithms, EncryptX lets you explore, compare, and secure your messages with robust protection and a seamless user experience—right in your browser.
+              </p>
+              <a
+                href="https://encrypt-x-janikaas-projects.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-[#E576CD] hover:text-[#CB7CC7] font-medium"
+                aria-label="Visit EncryptX project"
+              >
+                <ExternalLink className="w-5 h-5 mr-2" />
+                Visit EncryptX
               </a>
             </div>
           </div>

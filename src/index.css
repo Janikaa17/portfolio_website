@@ -2,11 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Syne:wght@400;500;600;700;800&display=swap');
+/* Hide default cursor */
+* {
+  cursor: none !important;
+}
 
 /* Base styles */
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Satoshi', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -14,7 +17,7 @@ body {
 
 /* Typography */
 h1, h2, h3, .font-display {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Satoshi', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* Selection styling */
@@ -69,3 +72,25 @@ img {
   height: auto;
   display: block;
 }
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+/*
+ burstPink: '#F48FFF',
+ burstLightPink: '#F6AFFF',
+ burstPurple: '#B96FFF',
+ burstAqua: '#6CF6FF',
+ burstCyan: '#7DF6FF',
+ burstBlue: '#3B5BFF',
+ burstOrange: '#FF6B4A',
+ burstYellow: '#FFD600',
+ accentViolet: '#E576CD',
+ outline: '#2D1E70',
+ darkBlue: '#3B1C7A',
+ white: '#FFFFFF',
+ */
