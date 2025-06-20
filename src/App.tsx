@@ -162,6 +162,23 @@ function App() {
                 Visit EncryptX
               </a>
             </div>
+            {/* NutriGenie Project Box */}
+            <div className="bg-[#F1EBD4]/10 rounded-2xl p-6 hover:transform hover:scale-105 transition-transform">
+              <h3 className="text-xl font-display font-bold mb-4">NutriGenie</h3>
+              <p className="mb-4">
+                NutriGenie is a smart and culturally aware AI-powered app that transforms your everyday recipes into healthier alternatives—high-protein, iron-rich, fiber-boosted, plant-based, and more—using seasonal, locally available Indian ingredients. With a focus on nutrition and tradition, NutriGenie helps you discover wholesome meal options tailored to your needs, making healthy eating both accessible and delicious for everyone.
+              </p>
+              <a
+                href="https://nutri-genie-app.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-[#E576CD] hover:text-[#CB7CC7] font-medium"
+                aria-label="Visit NutriGenie project"
+              >
+                <ExternalLink className="w-5 h-5 mr-2" />
+                Visit NutriGenie
+              </a>
+            </div>
           </div>
         </div>
       </section>
